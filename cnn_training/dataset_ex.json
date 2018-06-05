@@ -1,0 +1,7 @@
+{
+  "num_classes": 10575,
+  "num_images": -1,
+  "multi_label": false,
+  "dir_path": "/path_to_rec",
+  "file_list": [],
+}

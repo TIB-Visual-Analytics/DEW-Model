@@ -1,0 +1,43 @@
+{
+    "input":
+    {
+        "path": "/path/to/training/database",
+        "classes": 10575,
+        "height": 96,
+        "width": 96,
+        "channels": 3
+    },
+    "output":
+    {
+        "path": "/path/to/ouptut/folder",
+        "display_results": 10,
+        "save_iterations": 5000,
+        "keep_last_k_models_info": "null means that all models are kept, else last int(k) models are kept",
+        "keep_last_k_models": null,
+        "trainable_variables_to_summary": false
+    },
+    "model":
+    {
+        "architecture_possibilities": [ "inception_resnet_v2",
+                                         "inception_v4",
+                                         "resnet_v1_50", "resnet_v1_101", "resnet_v1_152",
+                                         "scratchnet",
+                                         "vgg_16", "vgg_19" ],
+        "architecture": "resnet_v1_101",
+        "mode_possibilities": ["scratch", "finetune", "continue_training"],
+        "mode": "finetune",
+        "checkpoint": "/path/to/pretrained/weights"
+    },
+    "parameters":
+    {
+        "train": true,
+        "validation_iter" : 1000,
+        "batch_size": 128,
+        "iterations": 100000,
+        "base_lr": 0.01,
+        "step_size": 10000,
+        "gamma": 0.5,
+        "momentum": 0.9,
+        "additional_variations": false
+    }
+}
