@@ -7,7 +7,7 @@ You can find further information in our paper: [https://link.springer.com/chapte
 
 ## Inference
 
-To predict the date a picture was taken, you can use our inference script. You can find a pretrained resnet 50 model [here](https://github.com/TIB-Visual-Analytics/DEW-Model/releases/download/v1.1/models.tar.gz).
+To predict the date a picture was taken, you can use our inference script. You can find a pretrained ResNet v1 50 model (7.1 ME) [here](https://github.com/TIB-Visual-Analytics/DEW-Model/releases/download/v1.1/models.tar.gz).
 
 ```
 python inference.py -m <PATH_TO_MODEL>/model.ckpt-275000 -p <PATH_TO_IMAGE>
